@@ -1,5 +1,19 @@
-<h1>All Artists in PlaySum</h1>
+<h1 class="text-center">All Artists in PlaySum</h1>
+  <div class="container">
+    <div class="row">
+      <% @artists.each do |artist| %>
+        <div class="col-md-4">
+          <div class="col-xs-12 inner_artist">
+            <h3 class="text-center"><%= link_to artist.full_name, artist_path(artist) %></h3>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
 
-<% @artists.each do |artist| %>
-  <h3><%= link_to artist.full_name, artist_path(artist) %></h3>
-<% end %>
+<hr>
+<div class="row">
+  <div class="text-center">
+    <%= link_to "Upload Song", new_song_path, class:"btn btn-primary" %>
+  </div>
+</div>

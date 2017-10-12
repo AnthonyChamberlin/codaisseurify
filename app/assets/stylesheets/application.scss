@@ -1,2 +1,15 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+body {
+  font-family: 'Comfortaa', cursive;
+}
+
+.inner_artist, .inner_song {
+  margin: 5px;
+  border: 1px solid #ccc;
+}
+
+.inner_song {
+  height: 150px;
+}
