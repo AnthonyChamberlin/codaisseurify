@@ -1,18 +1,16 @@
 Artist.destroy_all
 Song.destroy_all
 
-artist1 = Artist.create!({ first_name: "Stevie", last_name: "Wonder"})
-artist2 = Artist.create!({ first_name: "B.B.", last_name: "King"})
-artist3 = Artist.create!({ first_name: "John Lee", last_name: "Hooker"})
-artist4 = Artist.create!({ first_name: "John", last_name: "Mayer"})
+stevie_wonder = Artist.create!(first_name: 'Stevie', last_name: 'Wonder')
+bb_king = Artist.create!(first_name: 'B.B.', last_name: 'King')
+john_lee_hooker = Artist.create!(first_name: 'John Lee', last_name: 'Hooker')
+john_mayer = Artist.create!(first_name: 'John', last_name: 'Mayer')
 
-
-# WILL BE MOTOWN SONGS
-song1 = Song.create!({ name: "Superstition" })
-song2 = Song.create!({ name: "Signed, Sealed, Delivered (I'm Yours)" })
-song3 = Song.create!({ name: "Master Blaster (Jammin')" })
-
-# WILL BE BLUES SONGS
-song3 = Song.create!({ name: "Gravity" })
-song3 = Song.create!({ name: "Thrill is Gone" })
-song3 = Song.create!({ name: "Boom Boom" })
+Song.create!([
+               { name: 'Superstition', artist: stevie_wonder },
+               { name: "Signed, Sealed, Delivered (I'm Yours)", artist: stevie_wonder },
+               { name: "Master Blaster (Jammin')", artist: stevie_wonder },
+               { name: 'Gravity', artist: john_mayer },
+               { name: 'Thrill is Gone', artist: bb_king },
+               { name: 'Boom Boom', artist: john_lee_hooker }
+             ])
