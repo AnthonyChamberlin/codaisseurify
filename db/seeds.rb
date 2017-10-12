@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Song.destroy_all
+
+# WILL BE MOTOWN SONGS
+song1 = Song.create!({ name: "Superstition" })
+song2 = Song.create!({ name: "Signed, Sealed, Delivered (I'm Yours)" })
+song3 = Song.create!({ name: "Master Blaster (Jammin')" })
+
+# WILL BE BLUES SONGS
+song3 = Song.create!({ name: "Gravity" })
+song3 = Song.create!({ name: "Thrill is Gone" })
+song3 = Song.create!({ name: "Boom Boom" })
