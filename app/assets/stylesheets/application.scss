@@ -8,8 +8,23 @@ body {
 .inner_artist, .inner_song {
   margin: 5px;
   border: 1px solid #ccc;
+    border-radius: 10px;
 }
 
 .inner_song {
-  height: 150px;
+  height: 120px;
+}
+
+.fa-trash-o {
+  color: Coral;
+}
+
+.fa-circle-go {
+  padding-top: 5px;
+  color: #279673;
+}
+
+.artist_name {
+  color: #262626;
+  text-decoration: none !important;
 }

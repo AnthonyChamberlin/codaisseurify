@@ -3,11 +3,11 @@
 <div class="container">
   <div class="row">
     <% @artist.songs.each do |song| %>
-      <div class="col-md-4">
+      <div class="col-md-4 col_4">
         <div class="col-xs-12 inner_song">
           <h3 class="text-center"><%= song.name %></h3>
-          <div class="text-center">
-            <%= link_to "Remove", song_path(song), method: :delete, data: { confirm: "Are you sure?" }, class:"btn btn-danger" %>
+          <div class="text-right">
+            <%= link_to song_path(song), method: :delete, data: { confirm: "Are you sure?" }, class:"btn" do %><i class="fa fa-trash-o fa-2x" aria-hidden="true"></i><% end %>
           </div>
         </div>
       </div>
