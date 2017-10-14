@@ -12,6 +12,7 @@ daft_punk = Artist.create!(first_name: 'Daft', last_name: 'Punk')
 bob_marley = Artist.create!(first_name: 'Bob', last_name: 'Marley')
 jamiroquai = Artist.create!(first_name: 'Jamiroquai', last_name: '')
 moodyman = Artist.create!(first_name: 'Moodyman', last_name: '')
+acdc = Artist.create!(first_name: 'AC/DC', last_name: '')
 
 superstition = Song.create!(name: 'Superstition', artist: stevie_wonder)
 i_wish = Song.create!(name: 'I Wish', artist: stevie_wonder)
@@ -19,6 +20,7 @@ master_blaster = Song.create!(name: 'Master Blaster', artist: stevie_wonder)
 gravity = Song.create!(name: 'Gravity', artist: john_mayer)
 thrill_is_gone = Song.create!(name: 'Thrill is Gone', artist: bb_king)
 thrill_is_gone = Song.create!(name: 'Boom Boom', artist: john_lee_hooker)
+back_in_black = Song.create!(name: 'Back in Black', artist: acdc)
 
 photo_1_stevie = Photo.create!(remote_image_url: 'http://res.cloudinary.com/dbe5xk4jk/image/upload/v1507898092/steviewonder_uscol7.jpg', artist: stevie_wonder)
 photo_2_bb = Photo.create!(remote_image_url: 'http://res.cloudinary.com/dbe5xk4jk/image/upload/v1507897949/bbking_z3koja.jpg', artist: bb_king)
@@ -29,6 +31,7 @@ photo_6_daft_p = Photo.create!(remote_image_url: 'http://res.cloudinary.com/dbe5
 photo_7_bob_m = Photo.create!(remote_image_url: 'http://res.cloudinary.com/dbe5xk4jk/image/upload/v1507897717/bobmarley_tkseto.jpg', artist: bob_marley)
 photo_8_jam = Photo.create!(remote_image_url: 'http://res.cloudinary.com/dbe5xk4jk/image/upload/v1507897706/jamiroquai_zfiexb.jpg', artist: jamiroquai)
 photo_9_moody_m = Photo.create!(remote_image_url: 'http://res.cloudinary.com/dbe5xk4jk/image/upload/v1507897723/moodyman_tsoqma.jpg', artist: moodyman)
+photo_10_acdc = Photo.create!(remote_image_url: 'http://res.cloudinary.com/dbe5xk4jk/image/upload/v1507999575/CupDzZRWYAIUM4m_2_fh8tga.jpg', artist: acdc)
 
 
 lyrics1 = Lyric.create!(content: "Very superstitious, writings on the wall
@@ -168,3 +171,62 @@ Just keep me where the light is
 C'mon keep me where the light is
 C'mon keep me where the light is
 C'mon keep me where keep me where the light is (oh, oh)", song: gravity)
+
+lyrics5 = Lyric.create!(content: "Back in black I hit the sack
+I've been too long I'm glad to be back
+Yes I am
+Let loose from the noose
+That's kept me hanging about
+I kept looking at the sky cause it's gettin' me high
+Forget the hearse cause I'll never die
+I got nine lives cat's eyes
+Abusin' every one of them and runnin' wild
+
+Cause I'm back
+Yes I'm back
+Well I'm back
+Yes I'm back
+Well I'm back back
+Well I'm back in black
+Yes I'm back in black
+
+Back in the back of a Cadillac
+Number one with a bullet I'm a power pack
+Yes I am
+In a bang with the gang
+They've got to catch me if they want me to hang
+Cause I'm back on the track and I'm beatin' the flack
+Nobody's gonna get me on another rap
+So look at me now I'm just makin' my play
+Don't try to push your luck just get out of my way
+
+Cause I'm back
+Yes I'm back
+Well I'm back
+Yes I'm back
+Well I'm back back
+Well I'm back in black
+Yes I'm back in black
+
+Well I'm back yes I'm back
+Well I'm back yes I'm back
+Well I'm back back
+Well I'm back in black
+Yes I'm back in black
+
+Ho yeah
+Oh yeah
+Yes I am
+Oh yeah, yeah oh yeah
+Back in now
+
+Well I'm back, I'm back
+Back, (I'm back)
+Back, (I'm back)
+Back, (I'm back)
+Back, (I'm back)
+Back
+Back in black
+Yes I'm back in black
+
+Outta sight", song: back_in_black)

@@ -1,14 +1,19 @@
 class LyricsController < ApplicationController
   before_action :find_lyric, only: [:show]
 
+  
 
   def show; end
 
-    private
+  private
 
-    def find_lyric
-      @lyric = Lyric.find(params[:id])
-    end
+  def find_lyric
+    @lyric = Lyric.find(params[:id])
+  end
 
+
+  def lyric_params
+    params.require(:lyric).permit(:content)
+  end
 
 end
