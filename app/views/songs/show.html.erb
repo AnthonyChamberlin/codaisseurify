@@ -10,6 +10,7 @@
 
 <% if !@song.lyric %>
   <h3 class="lyrics text-center">Sorry, there are no lyrics for this song right now!</h3>
+  <%= link_to "Know the Lyrics to this song? Add them here!", new_song_lyric_path(@song.id), class:"btn" %>
 <% else %>
   <p class="lyrics text-center"><%= @song.lyric.content %></p>
 <% end %>

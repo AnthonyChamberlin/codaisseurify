@@ -38,6 +38,7 @@ Seven years of bad luck, the good things in your past
 When you believe in things that you don't understand
 Then you suffer
 Superstition ain't the way
+
 Very superstitious, wash your face and hands
 Rid me of the problems, do all that you can
 Keep me in a daydream, keep me goin' strong
@@ -45,45 +46,54 @@ You don't want to save me, sad is my song
 When you believe in things you don't understand
 Then you suffer
 Superstition ain't the way, yeh, yeh
+
 Very superstitious, nothin' more to say
 Very superstitious, the devil's on his way
 Thirteen month old baby, broke the lookin' glass
 Seven years of bad luck, good things in your past
 When you believe in things that you don't understand
 Then you suffer
+
 Superstition ain't the way, no, no, no", song: superstition)
 
 lyrics2 = Lyric.create!(content: "Looking back on when I
 Was a little nappy headed boy
 Then my only worry
 Was for Christmas what would be my toy
+
 Even though we sometimes
 Would not get a thing
 We were happy with the
 Joy the day would bring
+
 Sneaking out the back door
 To hang out with those hoodlum friends of mine
 Greeted at the back door
 But thought I told you not to go outside
+
 Tryin' your best to bring the
 Water to your eyes
 Thinkin' it might stop her
 From woopin' your behind
+
 I wish those days could come back once more
 Why did those days ever have to go
 I wish those days could come back once more
 Why did those days ever have to go
 'Cause I love them so
+
 Brother says he's tellin'
 'Bout you playin' doctor with that girl
 Just don't tell I'll give you
 Anything you want in this whole wide world
 Mama gives you money for Sunday school
 You trade yours for candy after church is through
+
 Smokin' cigarettes and writing something nasty on the wall (you nasty boy)
 Teacher sends you to the principal's office down the wall
 You grow up and learn that kinda thing ain't right
 But while you were doin'it-it sure felt outta sight
+
 I wish those days could come back once more
 Why did those days ever have to go
 I wish those days could come back once more
@@ -93,22 +103,27 @@ lyrics3 = Lyric.create!(content: "Everyone's feeling pretty
 It's hotter than July
 Though the world's full of problems
 They couldn't touch us even if they tried
+
 From the park I hear rhythms
 Marley's hot on the box
 Tonight there will be a party
 On the corner at the end of the block
+
 Didn't know you would be jammin' until the break of dawn
 I bet you nobody ever told you
 That you would be jammin' until the break of dawn
 You would be jammin' and jammin' and jammin' jam oh
+
 They want us to join their fighting
 But our answer today
 Is to let all our worries
 Like the breeze through our fingers slip away
+
 Peace has come to Zimbabwe
 Third World's right on the one
 Now's the time for celebration
 'Cause we've only just begun
+
 Didn't know you would be jammin' until the break of dawn
 Bet you nobody ever told you
 That you would be jammin' until the break of dawn
@@ -118,6 +133,7 @@ I know nobody told you that you
 Would be jammin' until the break of dawn (we're in the middle of the makin's)
 (Of the master blaster jammin')
 But gonna jammin', jammin', jammin'
+
 You ask me am I happy
 Well as matter of fact
 I can say that I'm ecstatic
