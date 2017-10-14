@@ -25,6 +25,7 @@ class SongsController < ApplicationController
 
   private
 
+
   def find_song
     @song = Song.find(params[:id])
   end

@@ -2,7 +2,7 @@ class ArtistsController < ApplicationController
   before_action :find_artist, only: [:show, :edit, :update, :destroy]
 
   def index
-    @artists = Artist.all.order("created_at DESC")
+    @artists = Artist.all
   end
 
   def show; end
