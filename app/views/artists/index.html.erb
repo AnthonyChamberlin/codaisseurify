@@ -14,20 +14,17 @@
 
 
 <div class="container filter_section">
-  <h2>Filter</h2>
-  <p class="exp">Here you can filter the artists either by their Name (in alphabetical order), or from when they joined Codaisseurify!</p>
-
   <ul class="nav nav-tabs">
     <li class="active">
-      <a data-toggle="tab" href="#home">By Name</a>
+      <a data-toggle="tab" href="#byname">By Name</a>
     </li>
     <li>
-      <a data-toggle="tab" href="#menu1">Most Recent</a>
+      <a data-toggle="tab" href="#bytime">Most Recent</a>
     </li>
   </ul>
 
   <div class="tab-content">
-    <div id="home" class="tab-pane fade in active">
+    <div id="byname" class="tab-pane fade in active">
       <% @artists.order_by_name.each do |artist| %>
       <div class="col-md-4">
         <div class="col-xs-12 inner_artist">
@@ -59,7 +56,7 @@
       </div>
       <% end %>
     </div>
-    <div id="menu1" class="tab-pane fade">
+    <div id="bytime" class="tab-pane fade">
       <% @artists.order_by_join.each do |artist| %>
       <div class="col-md-4">
         <div class="col-xs-12 inner_artist">

@@ -1,19 +1,26 @@
 class LyricsController < ApplicationController
-  before_action :find_lyric, only: [:show]
+  before_action :find_song, only: [:create]
 
-  
 
-  def show; end
+  def create
+    @lyric = @song.lyric.create(lyric_params)
+
+    if @lyric.save
+      redirect_to song_path(@song)
+    else
+      render 'new'
+    end
+  end
 
   private
 
-  def find_lyric
-    @lyric = Lyric.find(params[:id])
+  def find_song
+    @song = Song.find(params[:id])
   end
-
 
   def lyric_params
     params.require(:lyric).permit(:content)
   end
+
 
 end

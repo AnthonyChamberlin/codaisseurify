@@ -36,7 +36,7 @@ nav a {
   margin: 5px;
   border: 2px solid #fff;
   box-shadow: 0px 0px 10px #ccc;
-  background-color: rgba(255,255,255,0.6);
+  background-color: rgba(255,255,255,0.3);
   border-radius: 10px;
 }
 
@@ -49,11 +49,18 @@ nav a {
 
 .down_arrow {
   width: 100%;
+  margin-bottom: 50px;
 }
 
 .down_arrow img {
   width: 50px;
 
+}
+
+.artist_bio {
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .fa {
@@ -139,9 +146,35 @@ nav a {
   padding-bottom: 300px;
 }
 
+.nav {
+  border-bottom: 2px solid #fff;
+}
 .nav-tabs {
   margin-bottom: 40px;
 }
+
+.nav-tabs a {
+  color: #fff !important
+}
+
+.nav-tabs > li > a {
+  background-color: rgba(155, 155, 155, 0.4) !important;
+  border: 2px solid #fff !important;
+}
+
+.nav-tabs > li > a:active {
+  background-color: #262626 !important
+}
+
+.nav-tabs > li > a:hover {
+  background-color: #262626 !important
+}
+
+.nav-tabs > li > a:focus {
+  background-color: #262626 !important
+}
+
+
 
 
 .filter_section {

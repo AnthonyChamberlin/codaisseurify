@@ -9,18 +9,19 @@ class SongsController < ApplicationController
     @song = Song.new(song_params)
 
     if @song.save
-       redirect_to root_path
+       redirect_to artist_path(@song.artist)
     else
        render 'new'
     end
   end
 
-  def show; end
+  def show
+   end
 
   def destroy
     find_song
     @song.destroy
-    redirect_to root_path
+    redirect_to artist_path(@song.artist)
   end
 
   private

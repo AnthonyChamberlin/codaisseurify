@@ -1,3 +1,3 @@
 class Lyric < ApplicationRecord
-  belongs_to :song
+  belongs_to :song, dependent: :destroy
 end

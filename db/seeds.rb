@@ -4,15 +4,24 @@ Artist.destroy_all
 Song.destroy_all
 
 stevie_wonder = Artist.create!(first_name: 'Stevie', last_name: 'Wonder')
-bb_king = Artist.create!(first_name: 'B.B.', last_name: 'King')
+bb_king = Artist.create!(
+  first_name: 'B.B.',
+  last_name: 'King',
+  bio: 'Riley B. King, known professionally as B.B. King, was an American blues singer, electric guitarist, songwriter, and record producer.'
+)
 john_lee_hooker = Artist.create!(first_name: 'John Lee', last_name: 'Hooker')
 john_mayer = Artist.create!(first_name: 'John', last_name: 'Mayer')
 bill_withers = Artist.create!(first_name: 'Bill', last_name: 'Withers')
+acdc = Artist.create!(
+  first_name: 'AC/DC',
+  last_name: '',
+  bio:'AC/DC are an Australian hard rock band, formed in Sydney in 1973 by brothers Malcolm and Angus Young'
+)
 daft_punk = Artist.create!(first_name: 'Daft', last_name: 'Punk')
 bob_marley = Artist.create!(first_name: 'Bob', last_name: 'Marley')
 jamiroquai = Artist.create!(first_name: 'Jamiroquai', last_name: '')
 moodyman = Artist.create!(first_name: 'Moodyman', last_name: '')
-acdc = Artist.create!(first_name: 'AC/DC', last_name: '')
+
 
 superstition = Song.create!(name: 'Superstition', artist: stevie_wonder)
 i_wish = Song.create!(name: 'I Wish', artist: stevie_wonder)

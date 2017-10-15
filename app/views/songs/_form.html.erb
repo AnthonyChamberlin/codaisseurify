@@ -6,7 +6,7 @@
 
     <div class="form-group">
       <label>Artist: </label>
-    <%= f.collection_select(:artist_id, Artist.all, :id, :full_name, prompt: 'Select an Artist') %>
+    <%= f.collection_select(:artist_id, Artist.order_by_name.all, :id, :full_name, prompt: 'Select an Artist') %>
     </div>
     <div class="actions">
       <%= f.submit "Create", class: "btn btn-success" %>
