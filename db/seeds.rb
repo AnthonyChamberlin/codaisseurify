@@ -30,6 +30,7 @@ gravity = Song.create!(name: 'Gravity', artist: john_mayer)
 thrill_is_gone = Song.create!(name: 'Thrill is Gone', artist: bb_king)
 thrill_is_gone = Song.create!(name: 'Boom Boom', artist: john_lee_hooker)
 back_in_black = Song.create!(name: 'Back in Black', artist: acdc)
+robot_rock = Song.create!(name: 'Robot Rock', artist: daft_punk)
 
 photo_1_stevie = Photo.create!(remote_image_url: 'http://res.cloudinary.com/dbe5xk4jk/image/upload/v1507898092/steviewonder_uscol7.jpg', artist: stevie_wonder)
 photo_2_bb = Photo.create!(remote_image_url: 'http://res.cloudinary.com/dbe5xk4jk/image/upload/v1507897949/bbking_z3koja.jpg', artist: bb_king)

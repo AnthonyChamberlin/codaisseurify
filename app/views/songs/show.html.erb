@@ -8,9 +8,12 @@
 
 <h3 class="text-center lyrics_titles">Lyrics to <%= @song.name %> by <%= @song.artist.full_name %> </h3>
 
-<% if !@song.lyric %>
+<% if @no_lyrics %>
   <h3 class="lyrics text-center">Sorry, there are no lyrics for this song right now!</h3>
-  <%= render 'lyrics/form' %>
+  <div class="text-center">
+        <%= link_to "Add Lyrics", new_song_lyric_path(@song), class:"btn btn-success" %>
+    </div>
+  </div>
 <% else %>
   <p class="lyrics text-center"><%= @song.lyric.content %></p>
 <% end %>

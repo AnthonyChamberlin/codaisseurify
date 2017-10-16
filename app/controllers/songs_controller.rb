@@ -16,6 +16,7 @@ class SongsController < ApplicationController
   end
 
   def show
+    @no_lyrics = !@song.lyric
    end
 
   def destroy
